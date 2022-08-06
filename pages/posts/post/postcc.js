@@ -55,7 +55,7 @@ const [tcc, setTcc] = useState({
     if (!response.statusText === "OK") {
       toast.error("Erro ao adicionar post!");
     } else {
-      router.push('/pages/posts/tccs')
+      router.push('/posts/tccs')
     }
   };
 

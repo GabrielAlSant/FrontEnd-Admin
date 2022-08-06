@@ -1,3 +1,4 @@
+import Link from "next/link";
 import axios from "axios"
 import Header from "../components/header"
 import { useState, useEffect } from "react";
@@ -38,7 +39,9 @@ useEffect(()=>{setCurrentPage(0)}, [itensperpage])
     return(
         <div className="container-fluid g-0">
         <Header setQuery={setQuery}/>
-        <div>Desejo cadastrar um novo discente</div>
+        <center>
+            <Link href="/posts/post/postdiscente"><h3>Cadastrar discente</h3></Link>
+            </center>
         <h2>Discente Cadastrados</h2>
        <TableDiscentes search={search} currentdiscentes={currentdiscentes}/>
         <PaginationSelector itensperpage={itensperpage} setItensperpage={setItensperpage}/>

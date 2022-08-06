@@ -43,8 +43,9 @@ useEffect(()=>{setCurrentPage(0)}, [itensperpage])
     return(
         <div className="container-fluid g-0">
             <Header setQuery={setQuery}/>
-            <Link href="/posts/post/postcc"><a className="navbar-brand">Cadastrar Tcc</a></Link>
-            
+            <center>
+            <Link href="/posts/post/postcc"><h3>Cadastrar Tcc</h3></Link>
+            </center>
             <Table currentpesquisas ={currentpesquisas} search={search}></Table>
         <div className={styles.paginador}>
         <PaginationSelector itensperpage={itensperpage} setItensperpage={setItensperpage}/>

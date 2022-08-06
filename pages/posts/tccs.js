@@ -5,6 +5,7 @@ import Pagination from "../components/pagination";
 import PaginationSelector from "../components/paginaselector";
 import styles from "/styles/Home.module.css"
 import Table from "../components/cardtcc";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
     const response = await axios.get('https://BackEnd-ORM-TCC.undertak3r.repl.co/tcc')
@@ -42,6 +43,7 @@ useEffect(()=>{setCurrentPage(0)}, [itensperpage])
     return(
         <div className="container-fluid g-0">
             <Header setQuery={setQuery}/>
+            <Link href="/posts/post/postcc"><a className="navbar-brand">Cadastrar Tcc</a></Link>
             
             <Table currentpesquisas ={currentpesquisas} search={search}></Table>
         <div className={styles.paginador}>

@@ -3,6 +3,7 @@ import Header from "../components/header"
 import { useState, useEffect } from "react";
 import Pagination from "../components/pagination";
 import PaginationSelector from "../components/paginaselector";
+import TableDiscentes from "../components/carddiscente";
 
 export const getStaticProps = async() => {
     const response = await axios.get('https://BackEnd-ORM-TCC.undertak3r.repl.co/discente')
@@ -37,28 +38,9 @@ useEffect(()=>{setCurrentPage(0)}, [itensperpage])
     return(
         <div className="container-fluid g-0">
         <Header setQuery={setQuery}/>
-        <table className="table table-striped">
-        <thead>
-            <th>Nome</th>
-            <th>E-mail</th>
-            <th>Data de Nascimento</th>
-            <th>CPF</th>
-            <th>Campus</th>
-            <th>Curso</th>
-        </thead>
-        <tbody>
-        {search(currentdiscentes).map(({id, nome, email, datanascimento, cpf, campusId, cursoId})=>(
-        <tr key={id}>
-            <td>{nome}</td>
-            <td>{email}</td>
-            <td>{datanascimento}</td>
-            <td>{cpf}</td>
-            <td>{campusId}</td>
-            <td>{cursoId}</td>
-        </tr>
-        ))}
-        </tbody>
-        </table>
+        <div>Desejo cadastrar um novo discente</div>
+        <h2>Discente Cadastrados</h2>
+       <TableDiscentes search={search} currentdiscentes={currentdiscentes}/>
         <PaginationSelector itensperpage={itensperpage} setItensperpage={setItensperpage}/>
         <Pagination pages={pages} setCurrentPage={setCurrentPage} />
         </div>

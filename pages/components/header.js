@@ -4,7 +4,7 @@ export default function Header({setQuery}){
     return(
         <nav className="navbar navbar-expand-lg bg-success">
         <div className="container-fluid">
-        <Link href="/"><a className="navbar-brand">Biblioteca Digital de Pesquisas - IFMS</a></Link>
+        <Link href="/"><a className="navbar-brand">Biblioteca Digital de Pesquisas IFMS - Administração</a></Link>
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>

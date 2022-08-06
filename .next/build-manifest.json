@@ -25,6 +25,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/posts/post/postcc": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/posts/post/postcc.js"
+    ],
     "/posts/tccs": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

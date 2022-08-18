@@ -13,6 +13,7 @@ import React from "react";
             <th>Curso</th>
             <th>Data de Apresentação</th>
             <th>Monografia</th>
+            <th>Opções</th>
         </tr>
         </thead>
         <tbody>
@@ -24,6 +25,8 @@ import React from "react";
           <td>Nova Andradina</td>
           <td>{cursoId}</td>
           <td>{data_apresentacao}</td>
+          <td></td>
+          <td><button type="button" class="btn btn-outline-danger">Excluir</button><button type="button" class="btn btn-outline-primary">Alterar</button></td>
           </tr>
         ))}
         </tbody>   

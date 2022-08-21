@@ -15,15 +15,15 @@ export default function FormLog(){
         <form onSubmit={Login1()} className="border rounded w-50">
             <fieldset>
                 <legend>Página de Login</legend>
-                <div>
-                <label>E-mail</label>
-                <input id="email" type="email"/>
+                <div className="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
                 </div>
-                <div>
-                <label>Senha</label>
-                <input id="password" type="password"/>
+                <div className="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Senha</span>
+                <input id="password" type="password"  class="form-control" placeholder="Digite sua senha" aria-label="Password" aria-describedby="basic-addon1"/>
                 </div>
-                <button type="submit">Login</button>
+                <button className="btn btn-primary" type="submit">Login</button>
             </fieldset>
         </form>
     )

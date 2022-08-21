@@ -41,9 +41,12 @@ useEffect(()=>{setCurrentPage(0)}, [itensperpage])
         <Header setQuery={setQuery}/>
         <center>
             <Link href="/posts/post/postdiscente"><h3>Cadastrar discente</h3></Link>
-            </center>
+           
         <h2>Discente Cadastrados</h2>
+        </center>
+        <div class="row"> 
        <TableDiscentes search={search} currentdiscentes={currentdiscentes}/>
+       </div>
         <PaginationSelector itensperpage={itensperpage} setItensperpage={setItensperpage}/>
         <Pagination pages={pages} setCurrentPage={setCurrentPage} />
         </div>

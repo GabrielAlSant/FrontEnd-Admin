@@ -15,14 +15,11 @@
   ],
   "rootMainFiles": [],
   "pages": {
-<<<<<<< HEAD
     "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-=======
->>>>>>> 985c52b95934f03983308ed30e3de0953924094b
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -33,22 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-<<<<<<< HEAD
     "/posts/campus": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/posts/campus.js"
-=======
-    "/posts/discentes": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/posts/discentes.js"
-    ],
-    "/posts/tccs": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/posts/tccs.js"
->>>>>>> 985c52b95934f03983308ed30e3de0953924094b
     ]
   },
   "ampFirstPages": []

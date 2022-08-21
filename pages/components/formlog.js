@@ -12,9 +12,9 @@ export default function FormLog(){
         }
     }
     return (
-        <form onSubmit={Login1()} className="border rounded w-50">
+        <form onSubmit={Login1()} className="border rounded w-50 p-3">
             <fieldset>
-                <legend>Página de Login</legend>
+                <legend>Página de Login Administrativo da Biblioteca Digital do IFMS</legend>
                 <div className="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">@</span>
                 <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
